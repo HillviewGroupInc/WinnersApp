@@ -1,0 +1,27 @@
+﻿CREATE TABLE [dbo].[Employee]
+(
+	[EmployeeID] INT NOT NULL IDENTITY(1,1), 
+    [EmployeeTypeID] INT NOT NULL, 
+    [Title] NVARCHAR(8) NULL, 
+    [FirstName] NVARCHAR(50) NOT NULL, 
+    [MiddleName] NCHAR(1) NULL, 
+    [LastName] NVARCHAR(50) NOT NULL, 
+    [Suffix] NVARCHAR(10) NULL, 
+	[DOB] DATE NOT NULL,
+    [AddressLine1] NVARCHAR(60) NOT NULL, 
+    [AddressLine2] NVARCHAR(60) NULL, 
+    [City] NVARCHAR(30) NOT NULL, 
+    [StateProvince] NVARCHAR(80) NOT NULL, 
+    [PostalCode] NVARCHAR(15) NOT NULL, 
+	[Country] NVARCHAR(50) NOT NULL,
+    [SpatialLocation] [sys].[geography] NULL, 
+    [EmailAddress] NVARCHAR(50) NOT NULL, 
+    [PhoneNumber] NVARCHAR(25) NOT NULL,
+	AnnualLeaveAccrued int null,
+	AnnualLeaveUsed int null, 
+    [CreatedBy] INT NOT NULL, 
+    [CreateDate] DATETIME NOT NULL DEFAULT Getdate(), 
+    [UpdatedBy] INT NOT NULL, 
+    [UpdateDate] DATETIME NOT NULL DEFAULT Getdate(),
+	CONSTRAINT PK_Employee PRIMARY KEY (EmployeeID)
+)
