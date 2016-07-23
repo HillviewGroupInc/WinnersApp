@@ -8,7 +8,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{4f2cf13e-1dc8-4277-a166-ac5e9fb6bfc3}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql120DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -23,6 +23,7 @@
     <SqlServerVerification>False</SqlServerVerification>
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseSet>True</TargetDatabaseSet>
+    <GenerateCreateScript>True</GenerateCreateScript>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -64,5 +65,9 @@
     <Build Include="EmployeeLeave.sql" />
     <Build Include="EmployeeType.sql" />
     <Build Include="Leave.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="WinnersOffice.publish.xml" />
+    <None Include="WinnersOffice_Dev.publish.xml" />
   </ItemGroup>
 </Project>
