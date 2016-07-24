@@ -70,4 +70,7 @@
     <None Include="WinnersOffice.publish.xml" />
     <None Include="WinnersOffice_Dev.publish.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="WinnersOffice.refactorlog" />
+  </ItemGroup>
 </Project>
