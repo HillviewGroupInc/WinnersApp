@@ -65,6 +65,8 @@
     <Build Include="EmployeeLeave.sql" />
     <Build Include="EmployeeType.sql" />
     <Build Include="Leave.sql" />
+    <Build Include="UserType.sql" />
+    <Build Include="uspAddEmployee.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="WinnersOffice.publish.xml" />
