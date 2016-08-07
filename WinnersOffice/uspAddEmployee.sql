@@ -35,6 +35,7 @@ AS
 				@EmailAddress,@PhoneNumber,HASHBYTES('SHA2_512',@Password + CAST(@Salt AS NVARCHAR(36))),@Salt,@CreatedBy,@UpdatedBy)
 	END TRY
 	BEGIN CATCH
+		
 	END CATCH
 	END
 
